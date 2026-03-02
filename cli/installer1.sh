@@ -15,7 +15,7 @@ RESET="\033[0m"
 BLACK="\033[30m"
 GRAY="\033[90m"
 
-toInstall="niger.sh"
+toInstall= # the file inside ""
 
 # --- Step 1: Identify available source files ---
 
