@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script interactively installs either 'brokefetch.sh' or 'brokefetch_EDGE.sh'
+# This script interactively installs either whatever the user puts for $toInstall
 # from the current directory to /usr/bin. It prompts the user for choices.
 
 GREEN="\033[32m"
@@ -26,7 +26,7 @@ fi
 
 # Exit if no source files are found
 if [ ${#available_scripts[@]} -eq 0 ]; then
-    echo -e "${RED}Error code 002:${RESET} SHerFile.sh and SherFile_beta.sh were not found in the current directory."
+    echo -e "${RED}Error code 002:${RESET} ${toInstall} was not found in the current directory."
     exit 1
 fi
 
